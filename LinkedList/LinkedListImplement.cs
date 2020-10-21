@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace LinkedList
 {
@@ -137,6 +138,38 @@ namespace LinkedList
             }
             return false;
 
+        }
+        public bool DeleteSpecific(int data)
+        {
+            int countElement = 0;
+            Node temp = this.head;
+            if (this.head == null)
+            {
+                Console.WriteLine("Linked List is empty");
+                return false;
+            }
+            while(temp.next!=null)
+            {
+                Node prevTemp = temp;
+                if (temp.data == data)
+                    prevTemp.next = temp.next;
+                temp = temp.next;
+                return true;
+            }
+            Console.WriteLine("Deleted element {0}", data);
+            ListSize();
+            return false;
+        }
+        public void ListSize()
+        {
+            int countElement = 0;
+            Node temp = this.head;
+            while (temp.next != null)
+            {
+                temp = temp.next;
+                countElement++;
+            }
+            Console.WriteLine("Size of list = {0}",countElement);
         }
     }
 }

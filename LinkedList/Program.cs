@@ -42,6 +42,9 @@ namespace LinkedList
             ////UC7 Search for 30
             list.SearchValue(30);
 
+            ////UC8 Insert 40 after 30
+            list.InsertAtSpecific(40, 30);
+
 
 
 
