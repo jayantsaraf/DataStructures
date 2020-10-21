@@ -31,6 +31,9 @@ namespace LinkedList
             list.Display();
             list.InsertAtSpecificPosition(30, 56);
             list.Display();
+            ////UC5 Delete first element
+            list.DeleteFirst();
+            list.Display();
 
 
 
