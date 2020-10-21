@@ -79,5 +79,14 @@ namespace LinkedList
             head = head.next;
             Console.WriteLine("Deleted 1st element"); 
         }
+        public void DeleteLast()
+        {
+            Node temp = this.head;
+            if (this.head == null)
+                Console.WriteLine("Linked List is empty");
+            while (temp.next != null)
+                temp = null;
+            Console.WriteLine("Deleted 1st element");
+        }
     }
 }
