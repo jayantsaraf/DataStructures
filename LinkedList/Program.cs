@@ -32,7 +32,11 @@ namespace LinkedList
             list.InsertAtSpecificPosition(30, 56);
             list.Display();
             ////UC5 Delete first element
-            list.DeleteFirst();
+            //list.DeleteFirst();
+            //list.Display();
+
+            ////UC6 Delete last element
+            list.DeleteLast();
             list.Display();
 
 
