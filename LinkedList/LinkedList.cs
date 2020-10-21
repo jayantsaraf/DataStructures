@@ -21,5 +21,16 @@ namespace LinkedList
             }
             Console.WriteLine("{0} Data inserted in Linked List ", node.data);
         }
+        public void Display()
+        {
+            Node temp = this.head;
+            if(temp==null)
+                Console.WriteLine("Linked List is empty");
+            while(temp.next!=null)
+            {
+                Console.Write(temp.data + " ");
+                temp = temp.next;
+            }
+        }
     }
 }
