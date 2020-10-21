@@ -7,7 +7,7 @@ namespace LinkedList
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            LinkedList list = new LinkedList();
+            LinkedListImplement list = new LinkedListImplement();
             //UC1 Added Elements: -
             //list.Add(56);
             //list.Add(30);
@@ -36,8 +36,11 @@ namespace LinkedList
             //list.Display();
 
             ////UC6 Delete last element
-            list.DeleteLast();
-            list.Display();
+            //list.DeleteLast();
+            //list.Display();
+
+            ////UC7 Search for 30
+            list.SearchValue(30);
 
 
 
