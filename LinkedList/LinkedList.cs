@@ -32,5 +32,16 @@ namespace LinkedList
                 temp = temp.next;
             }
         }
+        public void AddAtFirst(int data)
+        {
+            Node node = new Node(data);
+            if (this.head == null)
+                head = node;
+            else
+            {
+                node.next = head;
+            }
+            head = node;
+        }
     }
 }
