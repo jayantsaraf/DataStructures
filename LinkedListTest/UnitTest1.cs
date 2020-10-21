@@ -17,5 +17,16 @@ namespace LinkedListTest
             bool actual = list.SearchValue(30);
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void TestCase_Should_Return_Positive_When_40_Inserted_After30()
+        {
+            LinkedListImplement list = new LinkedListImplement();
+            bool expected = true;
+            list.Add(56);
+            list.Add(30);
+            list.Add(70);
+            bool actual = list.InsertAtSpecific(40, 30);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

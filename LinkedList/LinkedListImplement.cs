@@ -116,5 +116,27 @@ namespace LinkedList
             }
             return false;
         }
+        public bool InsertAtSpecific(int data, int posValue)
+        {
+            Node node = new Node(data);
+            Node temp = this.head;
+            if (this.head == null)
+            {
+                Console.WriteLine("Linked List is empty");
+                return false;
+            }
+            while(temp.next!=null)
+            {
+                if(temp.data==data)
+                {
+                    Console.WriteLine("{0} inserted after {1}",data,posValue);
+                    node.next = temp.next;
+                    temp.next = node;
+                    return true;
+                }
+            }
+            return false;
+
+        }
     }
 }
