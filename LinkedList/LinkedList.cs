@@ -43,5 +43,34 @@ namespace LinkedList
             }
             head = node;
         }
+        public void Append(int data)
+        {
+            Node node = new Node(data);
+            Node temp = this.head;
+            if (temp == null)
+                temp = node;
+            while(temp.next!=null)
+            {
+                temp = temp.next;
+            }
+            temp.next = node;
+        }
+        public void InsertAtSpecificPosition(int data, int pos)
+        {
+            Node node = new Node(data);
+            Node temp = this.head;
+            if(temp==null)
+                Console.WriteLine("Linked List is empty");
+            while(temp.next!=null)
+            {
+                if(temp.data==pos)
+                {
+                    node.next = temp.next;
+                    temp.next = node;
+                    break;
+                }
+                temp = temp.next;
+            }
+        }
     }
 }

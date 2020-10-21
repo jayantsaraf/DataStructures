@@ -21,9 +21,16 @@ namespace LinkedList
             //list.Display();
 
             ////UC3 Appending the data
-            list.Append(56);
-            list.Append(30);
-            list.Append(70);
+            //list.Append(56);
+            //list.Append(30);
+            //list.Append(70);
+
+            ////UC4 Insert 30 between 56 and 70
+            list.Add(56);
+            list.Add(70);
+            list.Display();
+            list.InsertAtSpecificPosition(30, 56);
+            list.Display();
 
 
 
