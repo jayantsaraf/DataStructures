@@ -33,5 +33,18 @@ namespace StackUsingLinkedList
                 temp = temp.next;
             }
         }
+        public void Peek()
+        {
+            if (this.head == null)
+                Console.WriteLine("Empty Stack");
+            else
+                Console.WriteLine(this.head.data);
+        }
+        public void Pop()
+        {
+            Node temp = this.head.next;
+            this.head = temp;
+            Console.WriteLine("Popped element: " + this.head.data);
+        }
     }
 }
