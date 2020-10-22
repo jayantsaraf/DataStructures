@@ -40,5 +40,28 @@ namespace QueueUsingLinkedList
                 temp = temp.next;
             }
         }
+
+        public void Dequeue()
+        {
+            Node temp = this.head;
+            if (temp == null)
+            {
+                Console.WriteLine("Queue is empty");
+                return;
+            }
+            while(temp.next!=null)
+            {
+                Node prevTemp = temp;
+                if (prevTemp.next == null)
+                {
+                    prevTemp.next = null;
+                    Console.WriteLine("Deleted Element {0} successfully",prevTemp.next.data);
+                    return;
+                }
+                temp = temp.next;
+            }
+                
+
+        }
     }
 }

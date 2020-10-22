@@ -12,6 +12,8 @@ namespace QueueUsingLinkedList
             list.Enqueue(30);
             list.Enqueue(70);
             list.Display();
+            list.Dequeue();
+            list.Display();
 
         }
     }
