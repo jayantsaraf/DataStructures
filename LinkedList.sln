@@ -7,9 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedList", "LinkedList\Li
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedListTest", "LinkedListTest\LinkedListTest.csproj", "{A7F1D50B-E3D4-4BC2-AF07-E5279335131C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackUsingLinkedList", "StackUsingLinkedList\StackUsingLinkedList.csproj", "{E052429D-26FA-4F4B-BA60-188D4B030A7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackUsingLinkedList", "StackUsingLinkedList\StackUsingLinkedList.csproj", "{E052429D-26FA-4F4B-BA60-188D4B030A7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueUsingLinkedList", "QueueUsingLinkedList\QueueUsingLinkedList.csproj", "{28A49202-B76E-4E05-B3EB-7E645FC5F148}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueUsingLinkedList", "QueueUsingLinkedList\QueueUsingLinkedList.csproj", "{28A49202-B76E-4E05-B3EB-7E645FC5F148}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTable", "HashTable\HashTable.csproj", "{1EE3111D-1319-44E3-A499-44405D7440F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTree", "BinarySearchTree\BinarySearchTree.csproj", "{7634164D-26E5-4392-B7C0-FD0D304BB1AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{28A49202-B76E-4E05-B3EB-7E645FC5F148}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28A49202-B76E-4E05-B3EB-7E645FC5F148}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28A49202-B76E-4E05-B3EB-7E645FC5F148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EE3111D-1319-44E3-A499-44405D7440F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EE3111D-1319-44E3-A499-44405D7440F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EE3111D-1319-44E3-A499-44405D7440F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EE3111D-1319-44E3-A499-44405D7440F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7634164D-26E5-4392-B7C0-FD0D304BB1AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7634164D-26E5-4392-B7C0-FD0D304BB1AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7634164D-26E5-4392-B7C0-FD0D304BB1AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7634164D-26E5-4392-B7C0-FD0D304BB1AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
