@@ -42,6 +42,23 @@ namespace BinarySearchTree
             if (this.rightTree != null)
                 this.rightTree.Display();
         }
+        public bool Search(T element, ImplementBST<T> node)
+        {
+            if (node == null)
+                return false;
+            if (node.nodeData.Equals(nodeData))
+            {
+                Console.WriteLine("Element present in BST" + node.nodeData);
+                return true;
+            }
+            else
+                Console.WriteLine("Current element: " + node.nodeData);
+            if (element.CompareTo(node.nodeData) < 0)
+                Search(element, node.leftTree);
+            else
+                Search(element, node.rightTree);
+            return false;
+        }
         
     }
 }

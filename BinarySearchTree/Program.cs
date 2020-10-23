@@ -21,6 +21,8 @@ namespace BinarySearchTree
             bST.InsertData(63);
             bST.InsertData(67);
             bST.Display();
+            bool result = bST.Search(30, bST);
+            Console.WriteLine(result);
         }
     }
 }
